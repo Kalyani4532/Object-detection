@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object Detection and Counting</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Upload Image for Object Detection</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required><br><br>
+        <input type="submit" value="Upload & Detect">
+    </form>
+
+    {% if count is not none %}
+        <h2>Number of Objects Detected: {{ count }}</h2>
+        <img src="{{ image_url }}" alt="Detected Image">
+    {% endif %}
+</body>
+</html>

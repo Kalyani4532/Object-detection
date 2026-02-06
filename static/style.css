@@ -1,0 +1,93 @@
+/* Full-page Background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("free-video-3129576.avif");  /* 👈 Your image goes here */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-top: 50px;
+}
+
+/* Title */
+h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px #000;
+}
+
+/* Card-like Form */
+form {
+    background: rgba(0, 0, 0, 0.5);  /* Semi-transparent black */
+    padding: 30px 40px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* File Input */
+input[type="file"] {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    width: 100%;
+    border: none;
+    background-color: #fff;
+    color: #000;
+}
+
+/* Button Styling */
+input[type="submit"] {
+    padding: 12px 30px;
+    font-size: 16px;
+    background-color: #00b894;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #019875;
+}
+
+/* Result Text */
+h2 {
+    margin-top: 30px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000;
+}
+
+/* Detected Image Display */
+img {
+    margin-top: 20px;
+    max-width: 90%;
+    border: 4px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+}
